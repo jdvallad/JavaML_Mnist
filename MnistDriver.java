@@ -20,7 +20,7 @@ public class MnistDriver {
 
         System.out.println("Initiating one-time metadata scan...");
         Set<Integer> ignoreCols = new HashSet<>();
-        int labelCol = 784; // The Kaggle target variable index (131st comma)
+        int labelCol = 784; // The MNIST target variable index
 
         // Scan schema to auto-configure normalization and output mappings
         config.scanDataSchema(new String[] { config.rawSourcePath }, ignoreCols, labelCol);
