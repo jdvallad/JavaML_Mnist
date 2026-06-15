@@ -11,14 +11,15 @@ public class MnistConfig extends CoreConfig {
         // Hyperparameters
         this.batchSize = 64;
         this.learningRate = 0.01;
-        this.epochs = 5;
+        this.epochs = 10;
+        
 
         // File Paths
         // Note: Check if your CSV folder is also lowercase 'mnist' or uppercase 'Mnist'
-        this.rawSourcePath = "./JavaML_Mnist/csv/mnist.csv";
-        this.trainPath = "./JavaML_Mnist/csv/mnist_train.csv";
-        this.validationPath = "./JavaML_Mnist/csv/mnist_val.csv";
-        this.testPath = "./JavaML_Mnist/csv/mnist_test.csv";
+        this.rawSourcePath = "./JavaML_Mnist/data/mnist.csv";
+        this.trainPath = "./JavaML_Mnist/data/mnist_train.csv";
+        this.validationPath = "./JavaML_Mnist/data/mnist_val.csv";
+        this.testPath = "./JavaML_Mnist/data/mnist_test.csv";
 
         this.saveModelPath = "./JavaML_Mnist/models/mnist_model.ser";
         this.loadModelPath = "./JavaML_Mnist/models/mnist_model.ser";
